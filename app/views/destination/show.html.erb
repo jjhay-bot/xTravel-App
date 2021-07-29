@@ -1,0 +1,6 @@
+<div class="cards">
+    <p class="image"><%= image_tag @destination.image %></p>
+    <p class="name"><%= @destination.name %></p>
+    <p class="description"><%= @destination.description %></p>
+    <%= link_to "edit_destination",  edit_destination_path(@destination) %>
+</div>

@@ -1,0 +1,12 @@
+<h2 class="content"><%= @tag.title %></h2>
+
+<% @destinations.each do |destination| %>
+    <div class="cards">
+        <p class="image"><%= image_tag destination.image %></p>
+        <p class="name"><%= destination.name %></p>
+        <p class="description"><%= destination.description %></p>
+        <%= link_to "See more",  destination_path(destination) %>
+
+    </div>
+<% end %>
+

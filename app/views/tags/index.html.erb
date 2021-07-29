@@ -1,0 +1,8 @@
+<% @tags.each do |t| %>
+	<div class="message">
+	  <p class="content"><%= t.title %></p>
+	  <p class="time"><%= image_tag t.image %></p>
+	</div>
+    <%= link_to "Learn more", tag_path(t) %>
+<% end %>
+
